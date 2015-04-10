@@ -1,0 +1,22 @@
+{
+  "name": "Taboga",
+  "version": "0.0.1",
+  "description": "IFARHU Taboga",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": ""
+  },
+  "author": "Direccion de Tecnologia Informatica, IFARHU",
+  "license": "",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-compass": "^0.9.1",
+    "grunt-contrib-concat": "^0.5.0",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-contrib-uglify": "^0.5.1",
+    "grunt-contrib-watch": "^0.6.1"
+  }
+}
