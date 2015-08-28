@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>IFARHU - Taboga</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Styles -->
+        <!-- 1. Normalize -->
+        <link rel="stylesheet" href="resources/normalize.css">
+        <!-- 2. Taboga Styles -->
+        <link rel="stylesheet" href="build/css/taboga.css">
+        <!-- 3. Font Awesome -->
+        <link rel="stylesheet" href="bower_components/fontawesome/css/font-awesome.min.css">
+        <!-- 4. Select2 -->
+        <link rel="stylesheet" href="bower_components/select2/select2.css">
+        <link rel="stylesheet" href="bower_components/select2-bootstrap-css/select2-bootstrap.css">
+
+        <!-- Custom Fonts -->
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
+
+        <!-- Modernizr -->
+        <script src="bower_components/modernizr/modernizr.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Header -->
+        <header id="header">
+            <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+              <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="#">IFARHU Taboga</a>
+                </div>
+              </div><!-- /.container-fluid -->
+            </nav>
+        </header>
+        <!-- /Header-->
+
+        <!-- Aside -->
+        <aside id="left-panel">
+            <ul class="nav nav-pills nav-stacked">
+                <li class="active">
+                    <a href="">Inicio</a>
+                </li>
+                <li>
+                    <a href="">Instalación</a>
+                </li>
+                <li>
+                    Otros
+                </li>
+                <li>
+                    <a href="">Componentes</a>
+                </li>
+                <li>
+                    <a href="">FontAwesome</a>
+                </li>
+                <li>
+                    <a href="">Sparklines</a>
+                </li>
+                <li>
+                    <a href="">Select2</a>
+                </li>
+            </ul>
+        </aside>
+
+        <!-- Main -->
+        <div id="main">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <div class="jumbotron">
+                          <h1>Bienvenido a Taboga</h1>
+                          <p>Taboga es una plantilla base para todos los productos del IFARHU basada en Twitter Bootstrap y amoldada a nuestras necesidades.</p>
+                          <p><small>&copy; Dirección de Tecnología Informática, IFARHU, 2014.</small></p>
+                        </div>
+
+
+                        <!-- Instalación -->
+                        <h1 class="page-header">Instalación</h1>
+                        <p>La instalación de Taboga es muy fácil, solo debes seguir los siguientes pasos:</p>
+                        <ol>
+                            <li>Clona el repositorio de Taboga a tu proyecto.</li>
+                            <li>Instala las dependencias de NPM usando <code>npm install</code>.</li>
+                            <li>Instala las dependencias de Bower usando <code>bower install</code>.</li>
+                            <li>Utiliza el HTML base de <code>index.html</code> en tu proyecto.</li>
+                            <li>¡Listo, a programar!</li>
+                        </ol>
+
+
+                        <!-- Componentes -->
+                        <h1 class="page-header">Componentes</h1>
+                        <p>Al estar basado sobre Twitter Bootstrap, Taboga implementa todos los componentes nativos de Bootstrap. Para ello, puedes <a href="http://getbootstrap.com/components/">revisar la documentación oficial</a>.</p>
+
+
+                        <!-- FontAwesome -->
+                        <h1 class="page-header">FontAwesome</h1>
+                        <p>FontAwesome es una serie de íconos disponibles a utilizar y que se incrustan fácilmente por medio de simple HTML, por ejemplo <code>&lt;i class="fa fa-ban"&gt;&lt;/i&gt;</code> se transforma en: <i class="fa fa-ban"></i>.</p>
+                        <p>Para saber como usarlos, solo debes leer la <a href="http://fontawesome.io/">documentación oficial</a>.</p>
+                        <i class="fa fa-amazon"></i>
+
+
+                        <!-- Sparklines -->
+                        <h1 class="page-header">Sparklines</h1>
+                        <p>Sparklines es un componente que permite agregar gráficas en línea. Para conocer un poco más sobre ellos, <a href="http://omnipotent.net/jquery.sparkline">revisar la documentación</a>.</p>
+                        <p>
+                            <span class="sparklines" sparkType="bar" sparkBarColor="green">1,2,3,4,3,2,1</span>
+                            <span class="sparklines" sparkType="bar" sparkBarColor="red">1,2,3,4,3,2,1</span>
+                            <span class="sparklines" sparkType="pie">1,1,2</span>
+                            <span class="sparklines" sparkType="pie">1,5</span>
+                            <span class="sparklines" sparkType="pie">20,50,80</span>
+                        </p>
+
+
+                        <!-- Select2 -->
+                        <h1 class="page-header">Select2</h1>
+                        <p>Select2 es un plugin que permite el autocompletado de select boxes, con algunas mejoras. Algunos ejemplos son los siguientes:</p>
+
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <select class="select2 form-control input-sm">
+                                    <option value="AL">Alabama</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-6">
+                                <select multiple class="form-control input-sm select2">
+                                    <option value="AL">Alabama</option>
+                                    <option value="WY">Wyoming</option>
+                                </select>
+                            </div>
+                        </div><!--/.row-->
+
+
+                        <!-- Navegacion -->
+                        <h1 class="page-header">Navegacion</h1>
+                        <section>
+                            <header id="header">
+                                <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+                                  <div class="container-fluid">
+                                    <div class="navbar-header">
+                                        <a class="navbar-brand" href="#">IFARHU Control de Visitas</a>
+                                    </div>
+                                        <ul class="nav navbar-nav">
+                                            <li><a href="#">Registro de Visitas <span class="sr-only">(current)</span></a></li>
+                                            <li><a href="#">Listar Visitas</a></li>
+                                            <li><a href="#">Reportes</a></li>
+                                        </ul>
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Usuario <span class="caret"></span></a>
+                                                <ul class="dropdown-menu">
+                                                    <li><a href="http://visitas.app/auth/logout">Cerrar session</a></li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                  </div>
+                                </nav>
+                            </header>        <!-- /Header-->
+                        </section>
+
+                        <!-- Login -->
+                        <h1 class="page-header">Login</h1>
+                        <section>
+                            <div class="panel panel-default">
+                <div class="panel-body">
+                                        <form role="form" method="POST" action="http://visitas.app/auth/login">
+                        <input type="hidden" name="_token" value="uvpGsH5eaZ9QVHCd4XV3MFJrvI79UyRmZ4vYHRmA">
+                        <div class="form-group">
+                            <label for="username">Username</label>
+                            <input type="text" class="form-control" name="username" value="">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Contraseña</label>
+                            <input type="password" class="form-control" name="password" value="">
+                            <a href="http://wiki.ifarhu.gob.pa/xwiki/bin/view/Manuales/Solicitar+soporte%2C+accesos%2C+reportar+un+incidente+o+da%C3%B1o." target="_blank">Olvidé mi contraseña</a>
+                        </div>
+                        <div class="form-group">
+                            <label>Área</label>
+                            <div class="select2-container form-control select2" id="s2id_autogen1"><a href="javascript:void(0)" class="select2-choice" tabindex="-1">   <span class="select2-chosen" id="select2-chosen-2">Planta Baja</span><abbr class="select2-search-choice-close"></abbr>   <span class="select2-arrow" role="presentation"><b role="presentation"></b></span></a><label for="s2id_autogen2" class="select2-offscreen"></label><input class="select2-focusser select2-offscreen" type="text" aria-haspopup="true" role="button" aria-labelledby="select2-chosen-2" id="s2id_autogen2"><div class="select2-drop select2-display-none select2-with-searchbox">   <div class="select2-search">       <label for="s2id_autogen2_search" class="select2-offscreen"></label>       <input type="text" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" class="select2-input" role="combobox" aria-expanded="true" aria-autocomplete="list" aria-owns="select2-results-2" id="s2id_autogen2_search" placeholder="">   </div>   <ul class="select2-results" role="listbox" id="select2-results-2">   </ul></div></div><select class="form-control select2" tabindex="-1" title="" style="display: none;">
+                                <option>Planta Baja</option>
+                                <option>Piso #6</option>
+                                <option>Piso #7</option>
+                                <option>Piso #8</option>
+                                <option>Piso #9</option>
+                                <option>Piso #15</option>
+                                <option>Piso #16</option>
+                                <option>Piso #17</option>
+                            </select>
+                        </div>
+                        <hr>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary btn-lg btn-block">Iniciar sesión</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+                        </section>
+
+                        <section>
+                            <h1 class="page-header">Crear Usuario</h1>
+                            <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">Register</div>
+                <div class="panel-body">
+                    
+                    <form class="form-horizontal" role="form" method="POST" action="http://homestead.app/auth/register">
+                        <input type="hidden" name="_token" value="GPZ2q7f6eksRYzidPAlALmzB48o8GDFSPlIJ6uCD">
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Name</label>
+                            <div class="col-md-6">
+                                <input type="text" class="form-control" name="name" value="">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">E-Mail Address</label>
+                            <div class="col-md-6">
+                                <input type="email" class="form-control" name="email" value="">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Password</label>
+                            <div class="col-md-6">
+                                <input type="password" class="form-control" name="password">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-md-4 control-label">Confirm Password</label>
+                            <div class="col-md-6">
+                                <input type="password" class="form-control" name="password_confirmation">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                <button type="submit" class="btn btn-primary">
+                                    Register
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+                        </section>
+
+
+
+                    </div><!--/col-xs-12-->
+                </div><!--/#row-->
+            </div><!--/#container-fluid-->
+        </div><!--/#main-->
+
+        <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/jquery.sparkline/index.js"></script>
+        <script src="build/js/bootstrap.min.js"></script>
+
+        <!-- Select2 -->
+        <script src="bower_components/select2/select2.min.js"></script>
+        <script src="bower_components/select2/select2_locale_es.js"></script>
+
+        <!-- Taboga -->
+        <script src="build/js/taboga.min.js"></script>
+    </body>
+</html>
