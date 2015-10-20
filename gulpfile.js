@@ -1,6 +1,7 @@
 var gulp = require('gulp'), 
     sass = require('gulp-ruby-sass') ,
     notify = require("gulp-notify") ,
+    minify = require('gulp-minify-css');
     uglify  = require('gulp-uglify'),
     concat = require('gulp-concat'),
     rename = require('gulp-rename'),
@@ -10,20 +11,20 @@ var gulp = require('gulp'), 
 var config = {
      sassPath: './resources/sass',
      bowerDir: './bower_components' 
-}
+};
 
-gulp.task('bower', function() { 
+gulp.task('bower', function () { 
     return bower()
          .pipe(gulp.dest(config.bowerDir)) 
 });
 
-gulp.task('icons', function() { 
+gulp.task('icons', function () { 
     return gulp.src(config.bowerDir + '/fontawesome/fonts/**.*') 
         .pipe(gulp.dest('./public/fonts')); 
 });
 
 gulp.task('css', function() { 
-    return gulp.src(config.sassPath + '/style.scss')
+    return gulp.src(config.sassPath + '/app.scss')
          .pipe(sass({
              style: 'compressed',
              loadPath: [
@@ -32,44 +33,51 @@ gulp.task('css', function() { 
                  config.bowerDir + '/fontawesome/scss',
              ]
          }) 
-            .on("error", notify.onError(function (error) {
-                 return "Error: " + error.message;
-             }))) 
+        .on("error", notify.onError(function (error) {
+            return "Error: " + error.message;
+        }))) 
          .pipe(gulp.dest('css')); 
 });
 
 gulp.task('sass', function () {
     return gulp.src('./bower_components/bootstrap-sass-official/**/*.scss')
-    .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./build/css'));
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('./build/css'));
 });
 
-gulp.task('taboga',['js'], function () {
-return  gulp.src('./resources/**/app.scss')
-    .pipe(convert().on('error', convert.logError))
-    .pipe(rename('taboga.css'))
-    .pipe(gulp.dest('./build/css'));
+gulp.task('taboga', ['js'], function () {
+    return  gulp.src('./resources/**/app.scss')
+        .pipe(convert().on('error', convert.logError))
+        .pipe(rename('taboga.css'))
+        .pipe(gulp.dest('./build/css'));
 });
 
-gulp.task('js',['bower'], function () {
+gulp.task('js', ['bower'], function () {
     return gulp.src('./bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js')
         .pipe(uglify())
         .pipe(rename('bootstrap.min.js'))
-
         .pipe(gulp.dest('./build/js'));
+});
+
+gulp.task('tabogaStyles', function () {
+    return gulp.src('./build/css/taboga.css')
+        .pipe(minify({compatibility: 'ie8'}))
+        .pipe(rename({
+            suffix: '.min'
+        }))
+        .pipe(gulp.dest('./build/css'));
 });
 
 gulp.task('tabogaScripts', function () {
     return gulp.src('./resources/js/taboga.js')
         .pipe(uglify())
         .pipe(rename('taboga.min.js'))
-
         .pipe(gulp.dest('./build/js'));
 });
 
 // Rerun the task when a file changes
- gulp.task('watch', function() {
-     gulp.watch(config.sassPath + '/**/*.scss', ['css']); 
+ gulp.task('watch', function () {
+     gulp.watch(config.sassPath + '/**/*.scss', ['css', 'taboga']); 
 });
 
-  gulp.task('default', ['bower', 'icons', 'css','taboga','js','tabogaScripts']);
+  gulp.task('default', ['bower', 'icons', 'css', 'taboga', 'js', 'tabogaStyles', 'tabogaScripts']);
