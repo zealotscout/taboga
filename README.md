@@ -8,7 +8,7 @@ Taboga, conocida también como Isla de las Flores, es una Isla ubicada en el Pac
 
 Taboga tiene una historia muy colorida por el paso de muchas culturas por sus tierras, influencias de españoles, franceses, británicos y estadounidenses.
 
-[Conocer más sobre taboga](https://es.wikipedia.org/wiki/Isla_de_Taboga).
+[Conocer más sobre la Isla de Taboga](https://es.wikipedia.org/wiki/Isla_de_Taboga).
 
 ## Instalación
 

@@ -21,3 +21,4 @@ public/fonts/*
 node_modules
 bower_components
 build
+index.html
