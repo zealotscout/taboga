@@ -5,7 +5,6 @@
 
 //== Colors
 //
-
 $gray-base:              #000 !default;
 $gray-darker:            lighten($gray-base, 13.5%) !default;
 $gray-dark:              lighten($gray-base, 20%) !default;
@@ -19,9 +18,19 @@ $brand-info:             #5bc0de !default;
 $brand-warning:          #E99002 !default;
 $brand-danger:           #F04124 !default;
 
+//** Global textual link color.
+$link-color:            lighten($brand-primary, 28%) !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      darken($link-color, 15%) !default;
+//** Link hover decoration.
+$link-hover-decoration: underline !default;
+
+//== Typography
+//
+$font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
 //== Components
 //
-
 $padding-base-vertical:     6px !default;
 $padding-base-horizontal:   12px !default;
 
@@ -41,13 +50,8 @@ $border-radius-base:        0 !default;
 $border-radius-large:       0 !default;
 $border-radius-small:       0 !default;
 
-//== Typography
-//
-$font-family-sans-serif:  "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-
 //== Form states and alerts
 //
-
 $state-success-text:             $brand-success !default;
 $state-success-bg:               #dff0d8 !default;
 $state-success-border:           darken(adjust-hue($state-success-bg, -10), 5%) !default;
