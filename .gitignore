@@ -1,3 +1,47 @@
+# Ignore docs files
+_gh_pages
+_site
+.ruby-version
+
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.zip
+*.vi
+*~
+
+# OS or Editor folders
+.DS_Store
+._*
+Thumbs.db
+.cache
+.project
+.settings
+.tmproj
+*.esproj
+nbproject
+*.sublime-project
+*.sublime-workspace
+.idea
+.sass-cache
+<<<<<<< HEAD
+public
+
+# Komodo
+*.komodoproject
+.komodotools
+
+# grunt-html-validation
+validation-status.json
+validation-report.json
+
+# Folders to ignore
+node_modules
 /bootstrap/compiled.php
 /vendor
 composer.phar
@@ -8,17 +52,7 @@ Thumbs.db
 /nbproject/private/
 phpunit
 public
-public/bower_components
-public/node_modules
-public/build
-public/css/*
-public/js/*
-public/fonts/*
-/node_modules
 *.sublime-project
 .sass-cache
-.sass-cache
-node_modules
 bower_components
 build
-index.html
