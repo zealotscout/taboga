@@ -1,0 +1,35 @@
+{% include base.html %}
+<nav class="navbar navbar-inverse navbar-static-top" role="navigation">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a href="{{base}}/templates/landing_page.html" class="navbar-brand">IFARHU - Navbar</a>
+			<ul class="nav navbar-nav">
+				<li><a href="{{base}}/templates/landing_page.html">Home</a></li>
+				<li><a href="{{base}}/templates/create.html">Create</a></li>
+				<li><a href="{{base}}/templates/index.html">Index</a></li>
+				<li><a href="{{base}}/templates/edit.html">Edit</a></li>
+				<li><a href="{{base}}/templates/show.html">Show</a></li>
+			</ul>
+		</div>
+
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="{{base}}/templates/admin/dashboard.html">Admin Dashboard</a></li>
+				<li><a href="{{base}}/templates/admin/create.html">Admin Create</a></li>
+				<li><a href="{{base}}/templates/admin/edit.html">Admin Edit</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Usuario Guest <span class="caret"></span></a>
+					<ul class="dropdown-menu" role="menu">
+						<li><a href="{{base}}/templates/login.html"><i class="fa fa-sign-in"></i> Iniciar Sessión</a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
