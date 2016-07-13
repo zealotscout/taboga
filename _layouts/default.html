@@ -4,6 +4,8 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
     <head>
+        <!-- Inclusión de configuraciones de relative paths -->
+        {% include base.html %}
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>IFARHU - Taboga</title>
@@ -45,7 +47,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html">IFARHU Taboga</a>
+                        <a class="navbar-brand" href="/">IFARHU Taboga</a>
                     </div>
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -90,5 +92,9 @@
 
         <!-- Taboga -->
         <script src="{{base}}/build/js/taboga.min.js"></script>
+
+        <script type="text/javascript">
+            $('.select2').select2();
+        </script>
     </body>
 </html>

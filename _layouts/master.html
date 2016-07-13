@@ -1,5 +1,11 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
 <html>
 	<head>
+		<!-- Inclusión de configuraciones de relative paths -->
 		{% include base.html %}
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,15 +33,11 @@
 		<!--////////-->
 	</head>
 	<body>
-		<!-- Nav -->
-		{% include navbar.html %}
-		<!-- /Nav -->
-		
-		{{ content }}
 
-		<!-- Footer -->
+		{% include navbar.html %}
+		{{ content }}
 		{% include footer.html %}
-		<!-- /Footer -->
+
 		<script src="{{base}}/bower_components/jquery/dist/jquery.min.js"></script>
 		<script src="{{base}}/bower_components/jquery.sparkline/index.js"></script>
 		<script src="{{base}}/build/js/bootstrap.min.js"></script>

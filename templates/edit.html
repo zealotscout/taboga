@@ -1,12 +1,13 @@
 ---
-layout: master
+layout: default
 ---
+
 <div class="container">
 	<div class="row">
 		<div class="col-md-12">
 			<ol class="breadcrumb">
 				<li><a href="index.html">Index</a></li>
-				<li class="active">Editar Registro</li>
+				<li class="active">Actualizar Registro</li>
 			</ol>
 		</div>
 
@@ -14,42 +15,70 @@ layout: master
 
 	<div class="row">
 		<div class="col-md-12">
-			<h1>Editar Registro</h1>
-			<hr>
-
-			<h3>Nombre</h3>
-			<input type="text" name="" id="input" class="form-control" value="" required="required" pattern="" title="">
+			<h1>Nuevo Registro</h1>
 
 			<hr>
 
-			<h3>Departamento</h3>
-			<select name="" id="departments" class="form-control">
-				<option value="">-- Seleccione un departamento --</option>
-				<option value="">DTI</option>
-				<option value="">Desarrollo</option>
-			</select>
+			<form action="">
+				<div class="form-group">
+					<label>Campo de Texto</label>
+					<input type="text" class="form-control" placeholder="Roberto Durán" />
+				</div>
 
-			<hr>
+				<div class="form-group">
+					<label>Contraseña</label>
+					<input type="password" class="form-control" placeholder="***" />
+				</div>
 
-			<h3>Descripcion</h3>
-			<textarea name="" id="input" class="form-control" rows="3" required="required"></textarea>
+				<div class="form-group">
+					<label>Selección</label>
+					<select class="form-control">
+						<option value="">-- Seleccione un departamento --</option>
+						<option value="">DTI</option>
+						<option value="">Desarrollo</option>
+					</select>
+				</div>
 
-			<hr>
+				<div class="form-group">
+					<label>Seleccion (Select2)</label>
+					<select name="" class="form-control select2">
+						<option value="">-- Seleccione un departamento --</option>
+						<option value="">DTI</option>
+						<option value="">Desarrollo</option>
+					</select>
+				</div>
 
-			<h3>Roles</h3>
-			<select name="" id="tags" class="form-control" multiple="multiple">
-				<option value="">-- Seleccione un departamento --</option>
-				<option value="">Admin</option>
-				<option value="">Super Admin</option>
-				<option value="">Super User</option>
-			</select>
+				<div class="form-group">
+					<label>Textarea</label>
+					<textarea cols="30" rows="10" class="form-control"></textarea>
+				</div>
 
-			<hr>
+				<div class="form-group has-error has-feedback">
+					<label class="control-label">Campo con error</label>
+					<input type="text" class="form-control">
+					<i class="fa fa-exclamation-circle form-control-feedback" aria-hidden="true"></i>
+					<span id="inputError2Status" class="sr-only">Error en este campo</span>
+				</div>
 
-			<a href="index.html" class="btn btn-info btn-block">Enviar</a>
-			<a href="index.html" class="btn btn-warning btn-block">Cancelar</a>
+				<div class="form-group has-success has-feedback">
+					<label class="control-label">Campo con success</label>
+					<input type="text" class="form-control">
+					<i class="fa fa-exclamation-circle form-control-feedback" aria-hidden="true"></i>
+					<span id="inputError2Status" class="sr-only">Error en este campo</span>
+				</div>
 
-			<br>
+				<div class="form-group has-warning has-feedback">
+					<label class="control-label">Campo con warning</label>
+					<input type="text" class="form-control">
+					<i class="fa fa-exclamation-circle form-control-feedback" aria-hidden="true"></i>
+					<span id="inputError2Status" class="sr-only">Error en este campo</span>
+				</div>
+
+				<div class="form-group">
+					<button type="button" class="btn btn-success btn-lg">Actualizar</button>
+					<button type="button" class="btn btn-default btn-lg">Cancelar</button>
+				</div>
+			</form>
 		</div>
 	</div>
 </div>
