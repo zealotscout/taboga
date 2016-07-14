@@ -29,7 +29,6 @@ nbproject
 *.sublime-workspace
 .idea
 .sass-cache
-bower_components
 public
 
 # Komodo
