@@ -5,10 +5,22 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
-# Remove bower_components from the exclusion list 
-# in order for jekyll to detect the associated dependencies
+# Add or remove bower_components from the exclusion list 
+# in order for jekyll to detect/ignore the associated dependencies
 
 exclude:
   - node_modules
   - resources
   - README.md
+
+baseurl: /taboga
+
+# Development base url 
+# site:
+#   url:
+#     - http://192.168.10.10:4000/
+
+# Github Pages base url
+site:
+  url:
+    - taboga

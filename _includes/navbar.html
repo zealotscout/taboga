@@ -1,34 +1,34 @@
 <nav class="navbar navbar-inverse navbar-static-top" role="navigation">
-	<div class="container-fluid">
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a href="{{base}}" class="navbar-brand">Taboga - Templates</a>
-			<ul class="nav navbar-nav">
-				<li><a href="{{base}}/templates/landing_page.html">Home</a></li>
-				<li><a href="{{base}}/templates/create.html">Create</a></li>
-				<li><a href="{{base}}/templates/index.html">Index</a></li>
-				<li><a href="{{base}}/templates/edit.html">Edit</a></li>
-				<li><a href="{{base}}/templates/show.html">Show</a></li>
-			</ul>
-		</div>
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ site.baseurl }}/">IFARHU Taboga</a>
+        </div>
 
-		<div class="navbar-collapse collapse">
-			<ul class="nav navbar-nav navbar-right">
-				<li><a href="{{base}}/templates/admin/dashboard.html">Admin Dashboard</a></li>
-				<li><a href="{{base}}/templates/admin/create.html">Admin Create</a></li>
-				<li><a href="{{base}}/templates/admin/edit.html">Admin Edit</a></li>
-				<li class="dropdown">
-					<a href="#" class="dropdown-toggle" data-toggle="dropdown"> Usuario Guest <span class="caret"></span></a>
-					<ul class="dropdown-menu" role="menu">
-						<li><a href="{{base}}/templates/login.html"><i class="fa fa-sign-in"></i> Iniciar Sessión</a></li>
-					</ul>
-				</li>
-			</ul>
-		</div>
-	</div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">Inicio <span class="sr-only">(current)</span></a></li>
+                <li><a href="{{ site.baseurl }}/acerca">Acerca de Taboga</a></li>
+                <li><a href="{{ site.baseurl }}/instalacion">Instalación</a></li>
+                <li><a href="{{ site.baseurl }}/estilos">Estilos</a></li>
+                <li><a href="{{ site.baseurl }}/templates/landing_page">Templates</a></li>
+            </ul>
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Bienvenido Admin <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="{{ site.baseurl }}/templates/login.html"><i class="fa fa-pencil"></i> Login</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div><!-- /.container-fluid -->
 </nav>
