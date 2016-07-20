@@ -31,7 +31,7 @@
         <script src="bower_components/modernizr/modernizr.js"></script>
         <!--////////-->
     </head>
-    <body>
+    <body class="login">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -50,8 +50,6 @@
             </div><!--/#row-->
         </div><!--/#container-fluid-->
 
-        <hr />
-
         {% include footer.html %}
 
 
@@ -69,6 +67,12 @@
 
         <script type="text/javascript">
             $('.select2').select2();
+        </script>
+        <script>
+            // To attach Backstrech as the body's background
+            $(document).ready(function(){
+                $.backstretch("../images/login-bg1.png");
+            });
         </script>
     </body>
 </html>

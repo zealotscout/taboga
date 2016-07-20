@@ -5863,3 +5863,12 @@ aside#left-panel {
   border-width: 0 1px 3px 1px; }
   .panel-default .close {
     color: #333333; }
+
+body.login {
+  color: rgba(255, 255, 255, 0.5) !important; }
+  body.login h1 {
+    color: #fff !important; }
+  body.login div#top {
+    margin: 50px 0 30px 0 !important; }
+  body.login .panel {
+    color: #333 !important; }

@@ -16,18 +16,23 @@
                 <li><a href="{{ site.baseurl }}/acerca">Acerca de Taboga</a></li>
                 <li><a href="{{ site.baseurl }}/instalacion">Instalación</a></li>
                 <li><a href="{{ site.baseurl }}/estilos">Estilos</a></li>
-                <li><a href="{{ site.baseurl }}/templates/landing_page">Templates</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Templates <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li class="dropdown-header">Basic CRUD</li>
+                        <li><a href="{{ site.baseurl }}/templates/landing_page.html">Landing Page</a></li>
+                        <li><a href="{{ site.baseurl }}/templates/formulario">Formulario</a></li>
+                        <li><a href="{{ site.baseurl }}/templates/index.html">Index</a></li>
+                        <li><a href="{{ site.baseurl }}/templates/show.html">Show</a></li>
+                        <li><a href="{{ site.baseurl }}/templates/login.html">Login</a></li>
+                        <li class="dropdown-header">Admin CRUD</li>
+                        <li><a href="{{ site.baseurl }}/templates/admin/formulario.html">Formulario</a></li>
+                        <li><a href="{{ site.baseurl }}/templates/admin/dashboard.html">dashboard</a></li>
+                    </ul>
+                </li>
             </ul>
 
             <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Bienvenido Admin <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a href="{{ site.baseurl }}/templates/login.html"><i class="fa fa-pencil"></i> Login</a></li>
-                        </ul>
-                    </li>
-                </ul>
             </div>
         </div>
     </div><!-- /.container-fluid -->
