@@ -2,7 +2,6 @@
 layout: default
 ---
 
-<div class="container-fluid">
 	<ul class="breadcrumb">
 		<li><a href="{{ site.baseurl }}/templates/index">Dashboard</a></li>
 	</ul>
@@ -18,13 +17,11 @@ layout: default
 							<th>#</th>
 							<th>Nombre</th>
 							<th>Cedula</th>
-							<th>País</th>
 							<th>Beneficio</th>
 							<th>Fecha de Nacimiento</th>
-							<th>Centro</th>
 							<th>Cedula Acudiente</th>
-							<th>Nombre Acudiente</th>
-							<th>Correo electronico</th>
+							<th>Estado</th>
+							<th>Acciones</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -33,13 +30,13 @@ layout: default
 							<td>1</td>
 							<td><a href="show.html"> Stephen Jobs </a></td>
 							<td>E-EEE-EEE</td>
-							<td>Panamá</td>
 							<td>Concurso General Doctorado</td>
 							<td>20-7-1955</td>
-							<td>Florida State University</td>
 							<td>N-EEE-EEE</td>
-							<td>Jeff Jobs</td>
-							<td><a href="#" target="_blank">stephenj@apple.com</a></td>
+							<td><label for="" class="label label-success">Activo</label></td>
+							<td>
+								<a href="{{ site.baseurl }}/templates/admin/formulario.html" class="btn btn-success btn-xs">Edit</a> <a class="btn btn-danger btn-xs">Borrar</a>
+							</td>
 						</tr>
 					</tbody>
 				</table>
@@ -86,4 +83,3 @@ layout: default
 			</form>
 		</div>
 	</div>
-</div>
