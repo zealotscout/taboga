@@ -2,78 +2,67 @@
 layout: default
 ---
 
-<div class="container">
-	<div class="row">
-		<div class="col-md-12">
-		    <ol class="breadcrumb">
-		        <li><a href="{{ site.baseurl }}/templates/admin/dashboard">Admin Dashboard</a></li>
-		        <li>Editar</li>
-		    </ol>
+
+<div class="row">
+	<div class="col-md-3">
+		<div class="main-box infographic-box colored emerald-bg">
+			<i class="fa fa-users"></i>
+			<span class="headline">Registros</span>
+			<span class="value">6713</span>
 		</div>
-		<div class="col-md-12">
+	</div>
 
-			<div class="row">
-				<div class="col-md-3">
-					<div class="main-box infographic-box colored emerald-bg">
-						<i class="fa fa-users"></i>
-						<span class="headline">Registros</span>
-						<span class="value">6713</span>
-					</div>
-				</div>
+	<div class="col-md-3">
+		<div class="main-box infographic-box colored red-bg">
+			<i class="fa fa-envelope"></i>
+			<span class="headline">Denegado</span>
+			<span class="value">543</span>
+		</div>
+	</div>
 
-				<div class="col-md-3">
-					<div class="main-box infographic-box colored red-bg">
-						<i class="fa fa-envelope"></i>
-						<span class="headline">Denegado</span>
-						<span class="value">543</span>
-					</div>
-				</div>
+	<div class="col-md-3">
+		<div class="main-box infographic-box colored green-bg">
+			<i class="fa fa-check-square"></i>
+			<span class="headline">Por confirmar</span>
+			<span class="value">240</span>
+		</div>
+	</div>
 
-				<div class="col-md-3">
-					<div class="main-box infographic-box colored green-bg">
-						<i class="fa fa-check-square"></i>
-						<span class="headline">Por confirmar</span>
-						<span class="value">240</span>
-					</div>
-				</div>
+	<div class="col-md-3">
+		<div class="main-box infographic-box colored emerald-bg">
+			<i class="fa fa-search"></i>
+			<span class="headline">Confirmado</span>
+			<span class="value">500</span>
+		</div>
+	</div>
+</div>
 
-				<div class="col-md-3">
-					<div class="main-box infographic-box colored emerald-bg">
-						<i class="fa fa-search"></i>
-						<span class="headline">Confirmado</span>
-						<span class="value">500</span>
-					</div>
-				</div>
+<div class="row">
+	<div class="col-md-6">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				{% include graph1.html%}
 			</div>
+		</div>
 
-			<div class="panel panel-default">
-				<div class="panel-heading">Estadísticas</div>
-				<div class="panel-body">
-					<div class="row">
-						<div class="col-md-6">
-							{% include graph1.html%}
-						</div>
-
-						<div class="col-md-6">
-							{% include graph2.html%}
-						</div>
-					</div>
-					<hr>
-					<div class="row">
-						<div class="col-md-6">
-							{% include graph3.html %}
-						</div>
-
-						<div class="col-md-6">
-							{% include graph4.html %}
-						</div>
-					</div>
-				</div>
+		<div class="panel panel-default">
+			<div class="panel-body">
+				{% include graph3.html %}
 			</div>
+		</div>
+	</div>
 
-			<hr>
+	<div class="col-md-6">
+		<div class="panel panel-default">
+			<div class="panel-body">
+				{% include graph2.html%}
+			</div>
+		</div>
 
-			
+		<div class="panel panel-default">
+			<div class="panel-body">
+				{% include graph4.html %}
+			</div>
 		</div>
 	</div>
 </div>
