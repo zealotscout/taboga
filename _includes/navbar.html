@@ -12,11 +12,31 @@
 
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
-                <li class="active"><a href="index.html">Inicio <span class="sr-only">(current)</span></a></li>
-                <li><a href="{{ site.baseurl }}/acerca">Acerca de Taboga</a></li>
-                <li><a href="{{ site.baseurl }}/instalacion">Instalación</a></li>
-                <li><a href="{{ site.baseurl }}/estilos">Estilos</a></li>
-                <li class="dropdown">
+                {% if page.active == 'inicio'%}
+                    <li class="active"><a href="index.html">Inicio <span class="sr-only">(current)</span></a></li>
+                {% else %}
+                    <li><a href="index.html">Inicio <span class="sr-only">(current)</span></a></li>
+                {% endif %}
+
+                {% if page.active == 'acerca'%}
+                    <li class="active"><a href="{{ site.baseurl }}/acerca">Acerca de Taboga <span class="sr-only">(current)</span></a></li>
+                {% else %}
+                    <li><a href="{{ site.baseurl }}/acerca">Acerca de Taboga <span class="sr-only">(current)</span></a></li>
+                {% endif %}
+
+                {% if page.active == 'instalacion'%}
+                    <li class="active"><a href="{{ site.baseurl }}/instalacion">Instalacion <span class="sr-only">(current)</span></a></li>
+                {% else %}
+                    <li><a href="{{ site.baseurl }}/instalacion">Instalacion <span class="sr-only">(current)</span></a></li>
+                {% endif %}
+
+                {% if page.active == 'estilos'%}
+                    <li class="active"><a href="{{ site.baseurl }}/estilos">Estilos <span class="sr-only">(current)</span></a></li>
+                {% else %}
+                    <li><a href="{{ site.baseurl }}/estilos">Estilos <span class="sr-only">(current)</span></a></li>
+                {% endif %}
+
+                <li class="dropdown" class="active">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown"> Templates <span class="caret"></span></a>
                     <ul class="dropdown-menu" role="menu">
                         <li class="dropdown-header">Basic CRUD</li>

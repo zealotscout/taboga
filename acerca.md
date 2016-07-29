@@ -1,5 +1,6 @@
 ---
 layout: default
+active: acerca
 ---
 # Acerca de Taboga
 
